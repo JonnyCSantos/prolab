@@ -12,6 +12,16 @@ $(document).ready(function() {
         $(".header .menuMain").removeClass("open");
     });
 
+    $(".menu-mobile-dynamic")
+        .find("> ul > li > ul > li > ul")
+        .append(
+            '<li><a class="this-hover"><i class="icon to-right"></i>Ver tudo</a></li>'
+        );
+
+    $("li.item.raiz.menu-full").each(function() {
+        $(this).append('<div class="to-all"><a href="#">Ver tudo</a></div>');
+    });
+
     //produto frete
     $("input#btnCalculaFreteProduto").attr("value", "Calcular");
     $("input#txtCalculaFreteProduto").attr("placeholder", "Digite seu CEP");
