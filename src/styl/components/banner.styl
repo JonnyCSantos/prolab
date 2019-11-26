@@ -20,45 +20,251 @@ body .fbits-banner-centro-home
         transform: none !important
         background-color: transparent !important
         right: 50px !important
-body .fbits-banner-topo-home
-    height 80px
-    background-color: #000000
-    margin-bottom: 50px
-    & .fbits-banner-item
-        &, & a
-            height 80px
-        & a
-            display: flex !important
+html
+    & body 
+        .row 
+            & .line
+                text-align: center
+                & h3 
+                    color: #333333;
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    display: block
+                    margin 0 auto
+                    text-align: center
+        & .vitrine-produtos-container-rows
+            display: flex
             justify-content: center
-            align-items: center
-            & img 
-                height initial !important
-                width: initial !important
-                max-width: 100% !important
-.fbits-vitrine-home
-    & .row-vitrine-home
-        & .line
-            & h3 
-                color: #333333;
-                font-size: 22px;
-                font-weight: 400;
-                text-transform: uppercase;
-            & span 
-                display: none
-        & .vitrine-produtos
-            &-container
-                display: flex
-                justify-content: space-between
-                height 460px
-                max-height: 460px
-                width: 100%
-            &-imagem
-                flex: 0 0 250px !important
-                border 1px solid #000
-            &-lista
-                flex: 0 0 calc(100% - 250px) !important
-                max-width: calc(100% - 250px) !important
-                width: calc(100% - 250px) !important
+            height 820px
+            & > .vitrine-produtos-lista
+                flex: 0 0 100% !important
+                & .slick-slide
+                    margin: 0 6px
+                & .fbits-item-lista-spot
+                    border: 1px solid #e1e1e1 !important
+                    margin: 0
+                    height auto !important 
+                    min-height: initial !important
+                    transition: all 200ms ease
+                    margin-top: 10px
+                    &:hover
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.22), 0 0 7px rgba(255, 255, 255, 0.35);
+                    & .spot
+                        &:hover
+                            box-shadow: none !important
+                        & h3.spotTitle
+                            color: #333333;
+                            font-family: "Open Sans";
+                            font-size: 14px;
+                            font-weight: 600;
+                            text-transform: initial
+                        & .spotContent
+                            padding: 0
+                            transition: all 200ms ease
+                            & .fbits-spot-conteudo
+                                height auto
+                                transition: all 200ms ease
+                        & .fb-like
+                            display: none
+                        & .precoDe
+                            color: #999999;
+                            font-family: "Open Sans";
+                            font-weight: 600;
+                            text-decoration: line-through;
+                        & .precoPor
+                            font-family: "Open Sans";
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: #333333;
+                        & .spotCategoria,
+                        & .spotFab
+                            display: none
+                        & .botoesSpot
+                            & .bt.comprar
+                                background-color: #4fb36b;
+                                font-size: 0
+                                background-image: none !important
+                                &:hover
+                                    background-color: #38804C
+                                &:before
+                                    content: ''
+                                    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYXBhXzEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxNS41NTggNTE1LjU1OCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTUuNTU4IDUxNS41NTgiIHdpZHRoPSI1MTIiPjxnPjxwYXRoIGQ9Im0zNzguMzQ0IDMzMi43OGMyNS4zNy0zNC42NDUgNDAuNTQ1LTc3LjIgNDAuNTQ1LTEyMy4zMzMgMC0xMTUuNDg0LTkzLjk2MS0yMDkuNDQ1LTIwOS40NDUtMjA5LjQ0NXMtMjA5LjQ0NCA5My45NjEtMjA5LjQ0NCAyMDkuNDQ1IDkzLjk2MSAyMDkuNDQ1IDIwOS40NDUgMjA5LjQ0NWM0Ni4xMzMgMCA4OC42OTItMTUuMTc3IDEyMy4zMzctNDAuNTQ3bDEzNy4yMTIgMTM3LjIxMiA0NS41NjQtNDUuNTY0YzAtLjAwMS0xMzcuMjE0LTEzNy4yMTMtMTM3LjIxNC0xMzcuMjEzem0tMTY4Ljg5OSAyMS42NjdjLTc5Ljk1OCAwLTE0NS02NS4wNDItMTQ1LTE0NXM2NS4wNDItMTQ1IDE0NS0xNDUgMTQ1IDY1LjA0MiAxNDUgMTQ1LTY1LjA0MyAxNDUtMTQ1IDE0NXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==')
+                                    width: 14px
+                                    height 14px
+                                    background-repeat: no-repeat
+                                    background-size: contain
+                                    background-position: center
+                                    display: inline-block
+                                    margin-right: 5px
+                                    margin-bottom: -2px
+                                &:after
+                                    color: #ffffff;
+                                    font-family: "Open Sans";
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    content: 'ver mais detalhes'
+                            & .bt.adicionar
+                                display: none
+        & .fbits-banner-centroLower-home
+            & > div
+                & > div
+                    display: flex
+                    justify-content: space-between
+                    & .fbits-banner-item 
+                        flex: 0 0 calc(50% - 17.5px)
+        & .fbits-banner-topo-home
+            height 80px
+            background-color: #000000
+            margin-bottom: 50px
+            & .fbits-banner-item
+                &, & a
+                    height 80px
+                & a
+                    display: flex !important
+                    justify-content: center
+                    align-items: center
+                    & img 
+                        height initial !important
+                        width: initial !important
+                        max-width: 100% !important
+    & .fbits-vitrine-home
+        overflow: initial !important
+        & .row-vitrine-home
+            & .line
+                text-align: center
+                & h3 
+                    color: #333333;
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    display: block
+                    margin 0 auto
+                    text-align: center
+                & .vitrine-produtos-nav
+                    display: flex
+                    justify-content: flex-end
+                    height 36px
+                    line-height: 1
+                    margin: 0
+                    margin-left: auto
+                    margin-top: -27px
+                    & .slick-disabled
+                        opacity 0.6 !important
+                    & .slick-prev
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MiA0OTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MiA0OTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTk4LjYwOCwyNDYuMTA0TDM4Mi42NjQsNjIuMDRjNS4wNjgtNS4wNTYsNy44NTYtMTEuODE2LDcuODU2LTE5LjAyNGMwLTcuMjEyLTIuNzg4LTEzLjk2OC03Ljg1Ni0xOS4wMzJsLTE2LjEyOC0xNi4xMiAgICBDMzYxLjQ3NiwyLjc5MiwzNTQuNzEyLDAsMzQ3LjUwNCwwcy0xMy45NjQsMi43OTItMTkuMDI4LDcuODY0TDEwOS4zMjgsMjI3LjAwOGMtNS4wODQsNS4wOC03Ljg2OCwxMS44NjgtNy44NDgsMTkuMDg0ICAgIGMtMC4wMiw3LjI0OCwyLjc2LDE0LjAyOCw3Ljg0OCwxOS4xMTJsMjE4Ljk0NCwyMTguOTMyYzUuMDY0LDUuMDcyLDExLjgyLDcuODY0LDE5LjAzMiw3Ljg2NGM3LjIwOCwwLDEzLjk2NC0yLjc5MiwxOS4wMzItNy44NjQgICAgbDE2LjEyNC0xNi4xMmMxMC40OTItMTAuNDkyLDEwLjQ5Mi0yNy41NzIsMC0zOC4wNkwxOTguNjA4LDI0Ni4xMDR6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzMzMzMzMiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+Cgk8L2c+CjwvZz48L2c+IDwvc3ZnPg==') !important
+                        width: 22px !important
+                        height 37px !important
+                        background-size: 100%
+                        background-repeat: no-repeat
+                        background-position: center
+                        background-color: transparent !important
+                        transform: none !important
+                        position relative
+                        margin 0
+                        padding: 0
+                        left: initial 
+                        top: initial
+                    & .slick-next
+                        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MiA0OTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MiA0OTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTk4LjYwOCwyNDYuMTA0TDM4Mi42NjQsNjIuMDRjNS4wNjgtNS4wNTYsNy44NTYtMTEuODE2LDcuODU2LTE5LjAyNGMwLTcuMjEyLTIuNzg4LTEzLjk2OC03Ljg1Ni0xOS4wMzJsLTE2LjEyOC0xNi4xMiAgICBDMzYxLjQ3NiwyLjc5MiwzNTQuNzEyLDAsMzQ3LjUwNCwwcy0xMy45NjQsMi43OTItMTkuMDI4LDcuODY0TDEwOS4zMjgsMjI3LjAwOGMtNS4wODQsNS4wOC03Ljg2OCwxMS44NjgtNy44NDgsMTkuMDg0ICAgIGMtMC4wMiw3LjI0OCwyLjc2LDE0LjAyOCw3Ljg0OCwxOS4xMTJsMjE4Ljk0NCwyMTguOTMyYzUuMDY0LDUuMDcyLDExLjgyLDcuODY0LDE5LjAzMiw3Ljg2NGM3LjIwOCwwLDEzLjk2NC0yLjc5MiwxOS4wMzItNy44NjQgICAgbDE2LjEyNC0xNi4xMmMxMC40OTItMTAuNDkyLDEwLjQ5Mi0yNy41NzIsMC0zOC4wNkwxOTguNjA4LDI0Ni4xMDR6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzMzMzMzMiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+Cgk8L2c+CjwvZz48L2c+IDwvc3ZnPg==') !important
+                        width: 22px !important
+                        height 37px !important
+                        background-size: 100%
+                        background-repeat: no-repeat
+                        background-position: center
+                        background-color: transparent !important
+                        transform: rotate(180deg) !important
+                        position relative
+                        margin 0
+                        padding: 0
+                        left: initial 
+                        top: initial
+                & span 
+                    display: none
+            & .vitrine-produtos
+                &-container
+                    display: flex
+                    justify-content: space-between
+                    height 460px
+                    max-height: 460px
+                    width: 100%
+                &-imagem
+                    flex: 0 0 250px !important
+                    margin-top: 10px
+                    & img
+                        &:hover
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.22), 0 0 7px rgba(255, 255, 255, 0.35);
+                &-lista
+                    flex: 0 0 calc(100% - 250px) !important
+                    max-width: calc(100% - 250px) !important
+                    width: calc(100% - 250px) !important
+                    & .fbits-item-lista-spot
+                        border: 1px solid #e1e1e1 !important
+                        margin: 0 6px
+                        height auto !important 
+                        min-height: initial !important
+                        transition: all 200ms ease
+                        margin-top: 10px
+                        &:hover
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.22), 0 0 7px rgba(255, 255, 255, 0.35);
+                        & .spot
+                            &:hover
+                                box-shadow: none !important
+                            & h3.spotTitle
+                                color: #333333;
+                                font-family: "Open Sans";
+                                font-size: 14px;
+                                font-weight: 600;
+                                text-transform: initial
+                            & .spotContent
+                                padding: 0
+                                transition: all 200ms ease
+                                & .fbits-spot-conteudo
+                                    height auto
+                                    transition: all 200ms ease
+                            & .fb-like
+                                display: none
+                            & .precoDe
+                                color: #999999;
+                                font-family: "Open Sans";
+                                font-weight: 600;
+                                text-decoration: line-through;
+                            & .precoPor
+                                font-family: "Open Sans";
+                                font-size: 18px;
+                                font-weight: 700;
+                                color: #333333;
+                            & .spotCategoria,
+                            & .spotFab
+                                display: none
+                            & .botoesSpot
+                                & .bt.comprar
+                                    background-color: #4fb36b;
+                                    font-size: 0
+                                    background-image: none !important
+                                    &:hover
+                                        background-color: #38804C
+                                    &:before
+                                        content: ''
+                                        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYXBhXzEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxNS41NTggNTE1LjU1OCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTUuNTU4IDUxNS41NTgiIHdpZHRoPSI1MTIiPjxnPjxwYXRoIGQ9Im0zNzguMzQ0IDMzMi43OGMyNS4zNy0zNC42NDUgNDAuNTQ1LTc3LjIgNDAuNTQ1LTEyMy4zMzMgMC0xMTUuNDg0LTkzLjk2MS0yMDkuNDQ1LTIwOS40NDUtMjA5LjQ0NXMtMjA5LjQ0NCA5My45NjEtMjA5LjQ0NCAyMDkuNDQ1IDkzLjk2MSAyMDkuNDQ1IDIwOS40NDUgMjA5LjQ0NWM0Ni4xMzMgMCA4OC42OTItMTUuMTc3IDEyMy4zMzctNDAuNTQ3bDEzNy4yMTIgMTM3LjIxMiA0NS41NjQtNDUuNTY0YzAtLjAwMS0xMzcuMjE0LTEzNy4yMTMtMTM3LjIxNC0xMzcuMjEzem0tMTY4Ljg5OSAyMS42NjdjLTc5Ljk1OCAwLTE0NS02NS4wNDItMTQ1LTE0NXM2NS4wNDItMTQ1IDE0NS0xNDUgMTQ1IDY1LjA0MiAxNDUgMTQ1LTY1LjA0MyAxNDUtMTQ1IDE0NXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==')
+                                        width: 14px
+                                        height 14px
+                                        background-repeat: no-repeat
+                                        background-size: contain
+                                        background-position: center
+                                        display: inline-block
+                                        margin-right: 5px
+                                        margin-bottom: -2px
+                                    &:after
+                                        color: #ffffff;
+                                        font-family: "Open Sans";
+                                        font-size: 14px;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                        content: 'ver mais detalhes'
+                                & .bt.adicionar
+                                    display: none
 .fullbanner
     margin-top: 148px;
     .slick-dots
