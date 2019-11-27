@@ -22,6 +22,19 @@ body .fbits-banner-centro-home
         right: 50px !important
 html
     & body 
+        & .banner
+            &__triplo
+                display: flex
+                justify-content: space-between
+                align-items: flex-start
+                margin-bottom: 30px
+                &-item
+                    flex: 0 0 calc(33.333333333% - 20px)
+                    transition: all 200ms ease-in
+                    &:hover
+                        transform: perspective(1000px) translateZ(-50px);
+            &__lower2
+                margin-bottom: 30px
         .row 
             & .line
                 text-align: center
@@ -33,6 +46,9 @@ html
                     display: block
                     margin 0 auto
                     text-align: center
+                    & small 
+                        font-size: 22px;
+                        font-weight: 400;
         & .vitrine-produtos-container-rows
             display: flex
             justify-content: center
@@ -142,6 +158,9 @@ html
                     display: block
                     margin 0 auto
                     text-align: center
+                    & small 
+                        font-weight: 400;
+                        font-size: 22px;
                 & .vitrine-produtos-nav
                     display: flex
                     justify-content: flex-end
