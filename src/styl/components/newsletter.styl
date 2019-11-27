@@ -1,11 +1,49 @@
 .footer
+    &__conteudo
+        background-color: rgba(0,0,0,0.7)
+        display: flex
+        flex-flow: column nowrap
+        align-items: center
+        width: 100%
+        &-container
+            padding: 40px
+            display: flex
+            flex-flow: column nowrap
+            align-items: center
+            width: 100%
+            max-width: 1300px
+        &-content
+            display: flex
+            justify-content: flex-start
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left 
+            & .texts
+                flex: 1
+                margin-left: 30px
+        & h3
+            color: #ff4444;
+            font-size: 25px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-bottom 17px
+            border-bottom: 1px solid rgba(255,255,255,0.12)
+            width: 100%
+            display: block
+            text-align: center
+            margin-bottom: 30px
+            & strong 
+                font-weight: 700;
     &__news
         display: flex
         background-color: #000000
         margin: 0 
         padding: 0
         height 80px
-        margin: 30px 0
+        margin: 0
+        margin-top: 30px
         &-column
             flex: 0 0 50%
             display: flex
