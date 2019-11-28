@@ -1,21 +1,22 @@
-<div class="container">
-
+<div class="container-fluid">
     <!--BANNER CENTRO-->
     <section class="fbits-section-home fbits-banner-centro-home">
         <div class="row row-fbits-banner-centro">
             <FBITS:Banner filtroPosicao="centro" idsBanners="" tipo="carrossel" configuracaoCarrossel="{dots: true,fade: true}" classeItens="" />
         </div>
     </section>
-
+    
     <!--BANNER TOPO-->
     <section class="fbits-section-home fbits-banner-topo-home">
-        <div class="row row-fbits-banner-topo">
+        <div class="container">
+            <div class="row row-fbits-banner-topo">
             <div class="col-md-12">
-                <FBITS:Banner filtroPosicao="topo" idsBanners="" tipo="carrossel"  configuracaoCarrossel="{
+				<FBITS:Banner filtroPosicao="topo" idsBanners="" tipo="carrossel"  configuracaoCarrossel="{
 				  dots: false,
-                  infinite: true,
+                  infinite: false,
                   speed: '300',
-                  autoplay: true,
+                  autoplay: false,
+                  arrows: false,
                   slidesToShow: 4,
                   slidesToScroll: 1,
                   responsive: [
@@ -45,215 +46,15 @@
                 }" classeItens="" />
             </div>
         </div>
-    </section>
-    <section class="fbits-section-home fbits-banner-extra-home">
-        <div class="row row-fbits-banner-topo">
-            <div class="col-md-12">
-                <FBITS:Banner filtroPosicao="centroLower" idsBanners="" tipo="carrossel"  configuracaoCarrossel="{
-				  dots: false,
-                  infinite: true,
-                  speed: '300',
-                  autoplay: true,
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-                  responsive: [
-                    {
-                      breakpoint: 1160,
-                      settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                      }
-                    },
-                    {
-                      breakpoint: 767,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                      }
-                    },
-                    {
-                      breakpoint: 450,
-                      settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                      }
-                    }
-                  ]
-                }" classeItens="" />
-            </div>
         </div>
     </section>
+</div>
 
-    <!--VITRINE UM-->
-    <section class="fbits-section-home fbits-vitrine-home">
-        <div class="row row-vitrine-home">
-            <div class="col-md-12">
-                <div class="line">
-                    <h3 class="title big">Fantasias</h3>
-                    <span></span>
-                </div>
-                <FBITS:ListaSpots idsHotsites="84712" tipo="carrossel" configuracaoCarrossel="{
-				  dots: false,
-				  infinite: true,
-				  speed: '300',
-				  slidesToShow: 4,
-				  slidesToScroll: 1,
-				  responsive: [
-					{
-					  breakpoint: 1920,
-					  settings: {
-						slidesToShow: 4,
-						slidesToScroll: 1
-					  }
-					},
-					{
-					  breakpoint: 1280,
-					  settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					  }
-					},
-					{
-					  breakpoint: 767,
-					  settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1
-					  }
-					}
-				  ]
-				}" classeItens="componente-vitrine" />
-            </div>
-        </div>
-    </section>
-
-    <!--VITRINE DOIS-->
-    <section class="fbits-section-home fbits-vitrine-home">
-        <div class="row row-vitrine-home">
-            <div class="col-md-12">
-                <div class="line">
-                    <h3 class="title big">Acessórios p/ festas</h3>
-                    <span></span>
-                </div>
-                <FBITS:ListaSpots idsHotsites="84712" tipo="carrossel" configuracaoCarrossel="{
-				  dots: false,
-				  infinite: true,
-				  speed: '300',
-				  slidesToShow: 4,
-				  slidesToScroll: 1,
-				  responsive: [
-					{
-					  breakpoint: 1920,
-					  settings: {
-						slidesToShow: 4,
-						slidesToScroll: 1
-					  }
-					},
-					{
-					  breakpoint: 1280,
-					  settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					  }
-					},
-					{
-					  breakpoint: 767,
-					  settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1
-					  }
-					}
-				  ]
-				}" classeItens="componente-vitrine" />
-            </div>
-        </div>
-    </section>
-
-    <!--VITRINE TRÊs-->
-    <section class="fbits-section-home fbits-vitrine-home">
-        <div class="row row-vitrine-home">
-            <div class="col-md-12">
-                <div class="line">
-                    <h3 class="title big">Temas para aniversário</h3>
-                    <span></span>
-                </div>
-                <FBITS:ListaSpots idsHotsites="84712" tipo="carrossel" configuracaoCarrossel="{
-				  dots: false,
-				  infinite: true,
-				  speed: '300',
-				  slidesToShow: 4,
-				  slidesToScroll: 1,
-				  responsive: [
-					{
-					  breakpoint: 1920,
-					  settings: {
-						slidesToShow: 4,
-						slidesToScroll: 1
-					  }
-					},
-					{
-					  breakpoint: 1280,
-					  settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					  }
-					},
-					{
-					  breakpoint: 767,
-					  settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1
-					  }
-					}
-				  ]
-				}" classeItens="componente-vitrine" />
-            </div>
-        </div>
-    </section>
-
-    <!--VITRINE QUATRO-->
-    <section class="fbits-section-home fbits-vitrine-home">
-        <div class="row row-vitrine-home">
-            <div class="col-md-12">
-                <div class="line">
-                    <h3 class="title big">Outlet</h3>
-                    <span></span>
-                </div>
-                <FBITS:ListaSpots idsHotsites="84712" tipo="carrossel" configuracaoCarrossel="{
-				  dots: false,
-				  infinite: true,
-				  speed: '300',
-				  slidesToShow: 4,
-				  slidesToScroll: 1,
-				  responsive: [
-					{
-					  breakpoint: 1920,
-					  settings: {
-						slidesToShow: 4,
-						slidesToScroll: 1
-					  }
-					},
-					{
-					  breakpoint: 1280,
-					  settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					  }
-					},
-					{
-					  breakpoint: 767,
-					  settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1
-					  }
-					}
-				  ]
-				}" classeItens="componente-vitrine" />
-            </div>
-        </div>
-    </section>
-
+<div class="container-fluid">
     <!--FABRICANTES-->
-    <section class="fbits-section-home fbits-fabricantes-home">
+    <div class="container">
+        <div class="title_-marcs">Navegue por marcas<div class="navigator"></div></div>
+        <section class="fbits-section-home fbits-fabricantes-home">
         <div class="row row-fbits-fabricantes">
             <div class="col-md-12">
                 <Fbits:ListaMarcas tipo="carrossel" configuracaoCarrossel="{
@@ -264,6 +65,8 @@ slidesToShow: 6,
 slidesToScroll: 1,
 autoplay: true,
 autoplaySpeed: 2000,
+arrows: true,
+appendArrows: '.navigator',
 responsive: [
 {
   breakpoint: 1920,
@@ -291,25 +94,278 @@ responsive: [
             </div>
         </div>
     </section>
+    </div>
+</div>
 
-
-    <!--NEWSLETTER-->
-    <section class="fbits-section-home footerNews">
-        <div class="row row-fbits-news footerNewsletter">
-            <div class="col-md-12 centerContent">
-                <div class="news left">
-                    <i class="icon inews"></i>
-                </div>
-                <div class="txtNews left">
-                    <span class="title">REBECA NOSSAS</span>
-                    <span class="desc">NOVIDADES</span>
-                </div>
-                <p>
-                    Cadastre-se na<br>
-                    nossa newsletter
-                </p>
-                <Fbits:CadastroNewsletter exibirCampoSexo="false" />
+<div class="container">	
+	
+	<!--VITRINE UM-->
+	<section class="fbits-section-home fbits-vitrine-home">
+		<div class="row row-vitrine-home">
+		    <div class="line">
+				<h3 class="title big">Produtos em destaque</h3>
+				<span></span>
+				<div class="vitrine-produtos-nav vitrine-1-nav"></div>
+			</div>
+			<div class="vitrine-produtos-container">
+			    <div class="vitrine-produtos-imagem">
+			        <FBITS:Banner filtroPosicao="centro" idsBanners="118473" tipo="estatico" classeItens="" />
+			    </div>
+			    <div class="vitrine-produtos-lista">
+			        <FBITS:ListaSpots idsHotsites="84712" tipo="carrossel" configuracaoCarrossel="{
+				  dots: false,
+				  infinite: true,
+				  speed: '300',
+				  slidesToShow: 4,
+				  slidesToScroll: 1,
+				  arrows: true,
+				  appendArrows: '.vitrine-1-nav',
+				  responsive: [
+					{
+					  breakpoint: 1920,
+					  settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 1280,
+					  settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 767,
+					  settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					  }
+					}
+				  ]
+				}" classeItens="componente-vitrine" />
+			    </div>
+			</div>
+		</div>
+	</section>
+		
+    <!-- BANNER TRIPLO -->
+    <section class="banner__triplo">
+        <FBITS:Banner filtroPosicao="" classeItens="banner__triplo-item" idsBanners="118476, 118477, 118478" tipo="estatico" />
+    </section>
+    
+	<!--VITRINE DOIS-->
+	<section class="fbits-section-home fbits-vitrine-home">
+		<div class="row row-vitrine-home">
+		    <div class="line">
+				<h3 class="title big">Últimos lançamentos</h3>
+				<span></span>
+				<div class="vitrine-produtos-nav vitrine-2-nav"></div>
+			</div>
+			<div class="vitrine-produtos-container">
+			    <div class="vitrine-produtos-imagem">
+			        <FBITS:Banner filtroPosicao="centro" idsBanners="118474" tipo="estatico" classeItens="" />
+			    </div>
+			    <div class="vitrine-produtos-lista">
+			        <FBITS:ListaSpots idsHotsites="84711" tipo="carrossel" configuracaoCarrossel="{
+				  dots: false,
+				  infinite: true,
+				  speed: '300',
+				  slidesToShow: 4,
+				  slidesToScroll: 1,
+				  arrows: true,
+				  appendArrows: '.vitrine-2-nav',
+				  responsive: [
+					{
+					  breakpoint: 1920,
+					  settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 1280,
+					  settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 767,
+					  settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					  }
+					}
+				  ]
+				}" classeItens="componente-vitrine" />
+			    </div>
+			</div>
+		</div>
+	</section>
+	
+	<!--BANNER CENTRO LOWER-->
+	<section class="fbits-section-home fbits-banner-centroLower-home">
+        <div class="row row-fbits-banner-centroLower">
+            <div class="col-md-12">
+                <FBITS:Banner filtroPosicao="centro lower" idsBanners="" tipo="estatico" configuracaoCarrossel="{
+  dots: false,
+  infinite: false,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+}" classeItens="" />
             </div>
         </div>
     </section>
+	
+	<!--VITRINE TRES-->
+	<section class="fbits-section-home fbits-vitrine-home">
+		<div class="row row-vitrine-home">
+		    <div class="line">
+				<h3 class="title big">Mais vendidos</h3>
+				<span></span>
+				<div class="vitrine-produtos-nav vitrine-3-nav"></div>
+			</div>
+			<div class="vitrine-produtos-container">
+			    <div class="vitrine-produtos-imagem">
+			        <FBITS:Banner idsBanners="118479" tipo="estatico" classeItens="" />
+			    </div>
+			    <div class="vitrine-produtos-lista">
+			        <FBITS:ListaSpots idsHotsites="96383" tipo="carrossel" configuracaoCarrossel="{
+				  dots: false,
+				  infinite: true,
+				  speed: '300',
+				  slidesToShow: 4,
+				  slidesToScroll: 1,
+				  arrows: true,
+				  appendArrows: '.vitrine-3-nav',
+				  responsive: [
+					{
+					  breakpoint: 1920,
+					  settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 1280,
+					  settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 767,
+					  settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					  }
+					}
+				  ]
+				}" classeItens="componente-vitrine" />
+			    </div>
+			</div>
+		</div>
+	</section>
+	
+	<!--BANNER LOWER 2-->
+	<section class="fbits-section-home fbits-banner-lower2 banner__lower2">
+        <div class="fbits-banner-lower2-container">
+            <div class="fbits-banner-lower2-wrapper">
+                <FBITS:Banner filtroPosicao="8" idsBanners="118475" tipo="estatico" />
+            </div>
+        </div>
+    </section>
+	
+	<!--OFERTAS PRODUTOS PARA LABORATÓRIOS-->
+	<section class="fbits-section-home fbits-vitrine-home">
+		<div class="row">
+		    <div class="line">
+				<h3 class="title big">aproveite as nossas ofertas de<br>
+<small>produtos para laboratórios</small></h3>
+				<span></span>
+				<div class="vitrine-produtos-nav vitrine-4-nav"></div>
+			</div>
+			<div class="vitrine-produtos-container-rows">
+			    <div class="vitrine-produtos-lista">
+			        <FBITS:ListaSpots idsHotsites="84711" tipo="carrossel" configuracaoCarrossel="{
+		          rows: 2,
+				  dots: false,
+				  infinite: true,
+				  speed: '300',
+				  slidesToShow: 5,
+				  slidesToScroll: 1,
+				  arrows: true,
+				  appendArrows: '.vitrine-4-nav',
+				  responsive: [
+					{
+					  breakpoint: 1920,
+					  settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 1280,
+					  settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 767,
+					  settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					  }
+					}
+				  ]
+				}" classeItens="componente-vitrine" />
+			    </div>
+			</div>
+		</div>
+	</section>
+	
+	<!--NEWSLETTER-->
+    <section class="fbits-section-home footer__news">
+        <div class="footer__news-column">
+            <FBITS:Banner idsBanners="118480" tipo="estatico" />
+        </div>
+        
+        <div class="footer__news-column input">
+            <div class="footer__news-column-title">
+                Cadastre-se e receba novidades por email
+            </div>
+            
+            <div class="footer__news-column-input">
+                <Fbits:CadastroNewsletter exibirCampoSexo="false" />
+            </div>
+        </div>
+    </section> 
+</div>
+	
+<div class="container-fluid">
+	<!--CONTEÚDO RODAPE-->
+	<section class="fbits-section-home footer__conteudo">
+	    <div class="footer__conteudo-container">
+    	    <h3><strong>sobre a Prolab</strong> - Materiais para Laboratórios</h3>
+            <div class="footer__conteudo-content">
+                <div class="image">
+                    <FBITS:Banner idsBanners="118481" tipo="estatico" />
+                </div>
+                
+                <div class="texts">
+                    <FBITS:Conteudo filtroPosicao="" idsConteudos="113" tipo="estatico" configuracaoCarrossel="" classeItens="componente-conteudo-rodape" />
+                </div>
+            </div>
+	    </div>
+    </section>
+</div>
+    
+<div class="container">
+    
 </div>
