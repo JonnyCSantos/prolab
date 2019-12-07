@@ -24,40 +24,73 @@
             background-color: #d9d9d9
             margin-top: -12px
     &__list
-        .spot
-            width: 100%
-            max-width: 260px
-            float: none
-            margin: 0 auto
-            padding: 0   
-            border 1px solid transparent
-            @media(max-width : 991px)
-                padding: 5px
-            &:hover 
+        .fbits-item-lista-spot 
+            .spot
+                width: 100%
+                max-width: 260px
+                float: none
+                margin: 0 auto
+                padding: 0   
+                border 1px solid #e1e1e1 !important
+                &:hover
+                    .botoesSpot
+                        display: block
+                        opacity 1
+                        visibility visible
+                & h3.spotTitle
+                    color: #333333;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: initial
+                .spotContent
+                    padding: 0
+                    transition: all 200ms ease
+                    & .fbits-spot-conteudo
+                        height auto
+                        transition: all 200ms ease
+                .fb-like
+                    display: none
+                .precoDe
+                    color: #999999;
+                    font-family: "Open Sans";
+                    font-weight: 600;
+                    text-decoration: line-through;
+                .precoPor
+                    font-family: "Open Sans";
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #333333;
+                .spotCategoria,
+                .spotFab
+                    display: none
                 .botoesSpot
-                    opacity 1
-                    visibility: visible
-                    display flex
-                    justify-content: space-between !important
-                    .bt.comprar 
-                        background-color: $cor01 
-                        background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz48cGF0aCBkPSJNNDQ3Ljk4OCwxMzkuNjk2Yy0wLjE1Ni0yLjA4NC0xLjktMy42OTYtMy45ODgtMy42OTZoLTcydi0yMEMzNzIsNTIuMDM2LDMxOS45NiwwLDI1NiwwUzE0MCw1Mi4wMzYsMTQwLDExNnYyMEg2OGMtMi4wODgsMC0zLjgzMiwxLjYxMi0zLjk4OCwzLjY5NmwtMjgsMzY4Yy0wLjA4NCwxLjEwOCwwLjI5NiwyLjIwNCwxLjA1NiwzLjAyQzM3LjgyNCw1MTEuNTM2LDM4Ljg4OCw1MTIsNDAsNTEyaDQzMmMxLjExMiwwLDIuMTc2LTAuNDY0LDIuOTMyLTEuMjhjMC43NTYtMC44MTYsMS4xNC0xLjkxMiwxLjA1Ni0zLjAyTDQ0Ny45ODgsMTM5LjY5NnogTTE3MiwxMTZjMC00Ni4zMTYsMzcuNjgtODQsODQtODRzODQsMzcuNjg0LDg0LDg0djIwSDE3MlYxMTZ6IE0xNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMxOTYsMjMwLjA1NiwxNzguMDYsMjQ4LDE1NiwyNDh6IE0zNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMzOTYsMjMwLjA1NiwzNzguMDYsMjQ4LDM1NiwyNDh6Ii8+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=') !important 
-                        background-size 15px
-                        background-position: 80% !important
-                        font-weight 600 !important
-                        &:before
-                            display none
-                    .bt.adicionar
-                        display none !important
-                    .wishLink.link-add-lista.addListaDesejos
-                        color: transparent !important
-                        background-color: transparent !important
-                        background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjOTg5ODk4IiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEwcHgiIGhlaWdodD0iNTEwcHgiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTAgNTEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGcgaWQ9ImZhdm9yaXRlIj48cGF0aCBkPSJNMjU1LDQ4OS42bC0zNS43LTM1LjdDODYuNywzMzYuNiwwLDI1Ny41NSwwLDE2MC42NUMwLDgxLjYsNjEuMiwyMC40LDE0MC4yNSwyMC40YzQzLjM1LDAsODYuNywyMC40LDExNC43NSw1My41NUMyODMuMDUsNDAuOCwzMjYuNCwyMC40LDM2OS43NSwyMC40QzQ0OC44LDIwLjQsNTEwLDgxLjYsNTEwLDE2MC42NWMwLDk2LjktODYuNywxNzUuOTUtMjE5LjMsMjkzLjI1TDI1NSw0ODkuNnoiLz48L2c+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==') !important 
-                        background-position: center
-                        background-size: 15px 13px
-                        background-repeat: no-repeat !important
+                    .bt.comprar
+                        background-color: #4fb36b;
+                        font-size: 0
+                        background-image: none !important
                         &:hover
-                            border-color: $cor01 !important
+                            background-color: #38804C
+                        &:before
+                            content: ''
+                            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYXBhXzEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxNS41NTggNTE1LjU1OCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTUuNTU4IDUxNS41NTgiIHdpZHRoPSI1MTIiPjxnPjxwYXRoIGQ9Im0zNzguMzQ0IDMzMi43OGMyNS4zNy0zNC42NDUgNDAuNTQ1LTc3LjIgNDAuNTQ1LTEyMy4zMzMgMC0xMTUuNDg0LTkzLjk2MS0yMDkuNDQ1LTIwOS40NDUtMjA5LjQ0NXMtMjA5LjQ0NCA5My45NjEtMjA5LjQ0NCAyMDkuNDQ1IDkzLjk2MSAyMDkuNDQ1IDIwOS40NDUgMjA5LjQ0NWM0Ni4xMzMgMCA4OC42OTItMTUuMTc3IDEyMy4zMzctNDAuNTQ3bDEzNy4yMTIgMTM3LjIxMiA0NS41NjQtNDUuNTY0YzAtLjAwMS0xMzcuMjE0LTEzNy4yMTMtMTM3LjIxNC0xMzcuMjEzem0tMTY4Ljg5OSAyMS42NjdjLTc5Ljk1OCAwLTE0NS02NS4wNDItMTQ1LTE0NXM2NS4wNDItMTQ1IDE0NS0xNDUgMTQ1IDY1LjA0MiAxNDUgMTQ1LTY1LjA0MyAxNDUtMTQ1IDE0NXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==')
+                            width: 14px
+                            height 14px
+                            background-repeat: no-repeat
+                            background-size: contain
+                            background-position: center
+                            display: inline-block
+                            margin-right: 5px
+                            margin-bottom: -2px
+                        &:after
+                            color: #ffffff;
+                            font-family: "Open Sans";
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            content: 'ver mais detalhes'
+                    & .bt.adicionar
+                        display: none
         .spot__request
             .spotPreco, .botoesSpot
                 *
@@ -290,61 +323,7 @@ section.showcase.instagram
 
             &:before
                 content: '@'
-                
-.showcase
 
-    .spot
-        .spotImg
-            margin-bottom 18px !important
-            
-        .spotTitle
-            
-            font-size: 15px !important;
-            text-transform: initial !important;
-            color: #333333 !important;
-            font-weight: 400;
-
-            &:hover
-                color: $cor01!important;
-        .spotPreco
-            display flex !important
-            justify-content: center
-            height: initial
-            .precoDe
-                margin-right 10px
-                color: $cor03 
-            .precoPor 
-                font-size: 18px
-                font-weight bold
-                color: $cor01
-                &:before
-                    display: none
-        &:hover 
-            .botoesSpot
-                display flex !important
-        .botoesSpot
-            justify-content: space-between !important
-            .bt.comprar 
-                background-color: $cor01 
-                background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwP/2wBDAQEBAQEBAQIBAQICAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wAARCAApAC4DAREAAhEBAxEB/8QAGwABAAEFAQAAAAAAAAAAAAAAAAoDBQcICQb/xAAjEAABBAMAAwADAQEAAAAAAAADAQIEBQAGBwgREgkTFSFB/8QAHAEBAAICAwEAAAAAAAAAAAAAAAcIBgkDBQoC/8QAKREAAgEDAwMEAgMBAAAAAAAAAQIDAAQRBQYSBxMhCBQiMUFRCRVxI//aAAwDAQACEQMRAD8A8Lm2GvKdTFKYpTFKYpTFKYpTFK3A8efDPee/anddGNvfLePcypthiaazfuwbSurUV5us+M2TF1XX3shzXz7Ngzgeb7/Sxgje2OI9rhpH27eoumbVvo9IW1vdQ1qSEzdi1j7jpCpwZJPI4r4bGMkkeeIINWC6S+nbc3VTQ7jdsmpaNoGzILtbQXup3Ht4prt1ylvAArdx8tGH5FFAf4GR1aMYQ7PxzfOB9J2blXSatlVtmryhBlsjnSXXT4kuOKbW29ROa1jZtVaQDjMF/wAsejXfBGDK1425Nt3cOl7q0eHXNHcvYzKSMjDKQcMjr+GVgQR5H5UlSCYz6idPd0dLd33myN4QCDW7NwDxPKORGAaOaF8DnFKhDIcBhkrIqSK6Li7O7rCaYpTFKuVKAUq4qYx2IQEizgAMNVVEeIsoQyMVWqjkRzHKn+Ki5wXTtHaySIcOsbEf6ASK7DSYIrrVba2nHKGS4jVhkjKs4BGRgjIP2CD+qnAE8PPHuRqYeYSuT8+Px+Bbj26p5+tDPQUDfSAsK6y2hLJb5wSpNpJQ4zI6RGOE5hHqZ6FRg9bC7+3Wl+dajv7sa+8faafuDLQ5Vlj48M+HBYnkQfA4jjk+kOToZ0tm0JNmz6FpL7FhnFzFYm3PCO8IkR7gHuFctE4QKIlKnmxdufFebX5fuKaHUeOA+rTNX1WR1VOianqjd6qqaZU2KaUxNp/g668cu6u3k/l0gIkY51L6lnA47RgaRADl/oFuLVJt4f0cc840P2sshhZwy97EfOTwiD5PyZRj4ghSWI5GpHrz6f7Ztejz72urGxfeq6la263scJjlFrzm7MGWllYiOLgjtyxI6tIEjDCNIyWXPrTHTFKYpVaPINEkAlR3/rPGMKQAny1/wYL2kG/5e1zHfL2ovpUVF/6mfLosiGNxlGBB/wAPg1zQTy2s6XMB4zRuGU4BwynIODkHBH0QR+6kA0/54bWPVV4L3xjhWlyGGAdnZVvYDU0CdOYNrZEqHUyOY3Rq6OciK5oXS5CjRfX7HeveVWn9MMDTM1trTJbljxVrQOwH4BYXKBiP3xXP6FbSbL+TW8jtI49Q2ZHLfKgEjpqpiR3A+TLGdOlKAnyFMjkfXI/dai+bf5OrzzB5pTctickhcyooe0wtquJT90futhbyKuFYxK2CAjtS1UNXDG+zeUqowxSvYNEcxiPaTPem/Re22BrUmtyX7Xty0DRoOz2VQMVLMf8ArKWOFwPoAE+CcEQT6ivWbqXXrZkOybbQk0bTlvUuJm937x5e0riOMZtLYRqGfmxHJmKKAVXkG5ZZN1UmpilMUpilMUpilMUpilMUpilMUpilMUpilf/Z')!important
-                background-size auto
-                background-position: 100% !important
-                font-weight 600 !important
-                &:before
-                    display none
-            .bt.adicionar
-                display none !important
-            .wishLink.link-add-lista.addListaDesejos
-                color: transparent !important
-                background-color: transparent !important
-                background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjOTg5ODk4IiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEwcHgiIGhlaWdodD0iNTEwcHgiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTAgNTEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGcgaWQ9ImZhdm9yaXRlIj48cGF0aCBkPSJNMjU1LDQ4OS42bC0zNS43LTM1LjdDODYuNywzMzYuNiwwLDI1Ny41NSwwLDE2MC42NUMwLDgxLjYsNjEuMiwyMC40LDE0MC4yNSwyMC40YzQzLjM1LDAsODYuNywyMC40LDExNC43NSw1My41NUMyODMuMDUsNDAuOCwzMjYuNCwyMC40LDM2OS43NSwyMC40QzQ0OC44LDIwLjQsNTEwLDgxLjYsNTEwLDE2MC42NWMwLDk2LjktODYuNywxNzUuOTUtMjE5LjMsMjkzLjI1TDI1NSw0ODkuNnoiLz48L2c+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==') !important 
-                background-position: center
-                background-size: 15px 13px
-                background-repeat: no-repeat !important
-                &:hover
-                    border-color: $cor01 !important
-        .fbits-spot-conteudo
-            height: auto !important
 
 .spotPreco 
     height: auto!important

@@ -1,19 +1,121 @@
 #bodyProduto , #bodyListaCompra
+    .interna.cf
+        max-width: 1300px
+        margin 0 auto
+        .verDetalhes
+            padding: 0 10px
+            i
+                display: flex
+                justify-content: center 
+                align-items: center
+                &:before
+                    opacity .5
+                &:after
+                    font-size: 15px 
+                    color: #555
+        .fbits-componente-imagem
+            img
+                border: 1px solid #ccc !important
+                margin-bottom: 20px
+    .detalhe-produto
+        div#imagem-pagina-produto
+            width: 40%
+        .produtoInfo.colunaProduto.coluna2
+            width: 31%
+            .avalie-top
+                text-decoration none
+                display flex
+                alig-items: center
+                width: 100%;
+                position: absolute 
+                top: 0px
+                left: 85px
+                font-size: 0
+                color: #777
+                &:before
+                    content '|'
+                    margin-right 10px
+                    font-size: 12px
+                &:after
+                    content 'Faça sua avaliação'
+                    margin-right 10px
+                    font-size: 12px
+                    text-decoration: underline
+            .fbits-produto-nome
+                font-size: 20px 
+                text-transform uppercase
+                color: #000
+                font-weight: 700
+            .fbits-sku
+                float: none
+                text-align: left
+                font-size: 12px
+                font-weight: 700;
+                color: #9e9e9e
+            .short-desc
+                margin-top 20px
+                .paddingbox
+                    font-size: 14px
+                    color: #000
+                    line-height: 18px
+                    font-weight 500
+                    strong 
+                        font-weight 500
+                a
+                    font-size: 14px
+                    color: $cor02
+                    font-weight: 700
+        .colunaProduto.coluna3
+            width: 27%
+            padding: 30px
+            margin-left: 25px;
+            border: 1px solid #ccc
+            .fbits-preco
+                .precoPor
+                    font-size: 22px
+                    font-weight: 700
+                    color: #000
+                    &:before
+                        display: none
+            .fbits-parcelamento-padrao
+                padding-bottom 20px
+                margin-bottom 20px
+                border-bottom: 1px solid #ccc
+                .summary 
+                    color: $cor02
+                    font-size: 14px
+                    font-weight 500
+                    text-transform initial
+                    &:before
+                        border-left-color: $cor02
+                    &.opened
+                        &:before
+                            border-top-color: $cor02
+                            border-left-color: transparent
+            #fbits-forma-pagamento
+                display: none
     .ruler
         margin-top 0
-
     padding-top 20px
+    .jcarousel-prev.jcarousel-prev-vertical,
+    .jcarousel-next.jcarousel-next-vertical
+        top: initial
+        bottom: 0 
     .content.produto
-        margin-top: 140px
         .fbits-breadcrumb
+            padding: 25px 0 10px 0
+            border-bottom: 1px solid #cecece !important
+            margin: 0 auto !important
+            margin-bottom: 25px !important
+            max-width: 1300px
+            
             >ol
-                display: flex
+                display: inline-block
                 >li
                     display: inline
                     &:first-child
                         span[itemprop]
                             font-size: 0px
-                            text-transform uppercase
                             color: #989898
                             font-weight 400
                             &:before
@@ -21,28 +123,27 @@
                                 font-size: 12px
                     span[itemprop]
                         font-size: 12px
-                        color: #979797
+                        color: #666666
                         font-weight: 800
                         line-height: 16px
-                        text-transform uppercase
 
                     .separador
                         &:before
                             content: ''
                             display inline-block
                             color: #979797
-                            width: 10px
-                            height 10px
-                            background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjOTc5Nzk3IiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDUxLjg0NnB4IiBoZWlnaHQ9IjQ1MS44NDdweCIgdmlld0JveD0iMCAwIDQ1MS44NDYgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxLjg0NiA0NTEuODQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZD0iTTM0NS40NDEsMjQ4LjI5MkwxNTEuMTU0LDQ0Mi41NzNjLTEyLjM1OSwxMi4zNjUtMzIuMzk3LDEyLjM2NS00NC43NSwwYy0xMi4zNTQtMTIuMzU0LTEyLjM1NC0zMi4zOTEsMC00NC43NDRMMjc4LjMxOCwyMjUuOTJMMTA2LjQwOSw1NC4wMTdjLTEyLjM1NC0xMi4zNTktMTIuMzU0LTMyLjM5NCwwLTQ0Ljc0OGMxMi4zNTQtMTIuMzU5LDMyLjM5MS0xMi4zNTksNDQuNzUsMGwxOTQuMjg3LDE5NC4yODRjNi4xNzcsNi4xOCw5LjI2MiwxNC4yNzEsOS4yNjIsMjIuMzY2QzM1NC43MDgsMjM0LjAxOCwzNTEuNjE3LDI0Mi4xMTUsMzQ1LjQ0MSwyNDguMjkyeiIvPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=')
+                            width: 7px
+                            height 7px
+                            margin 0 10px
+                            opacity .4
+                            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1LjI3IDkuMjkiPjx0aXRsZT5hcnJvdy1yaWd0aDI8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHBhdGggZD0iTTAsLjYzQS42My42MywwLDAsMSwxLjA3LjE4bDQsNGEuNjMuNjMsMCwwLDEsMCwuODhsLTQsNEEuNjMuNjMsMCwwLDEsMCw4LjY3WiIvPjwvZz48L2c+PC9zdmc+')
                             background-repeat no-repeat
                             background-position: center 
-                            background-size: 8px
+
 
                     &:last-child
                         span[itemprop]
                             font-weight: bold
-                            color $cor02
-                            font-size 12px
 
     #avaliacao-Produto
         max-height: 180px
@@ -202,27 +303,25 @@
              
 
     #msgEstoqueDisponivel
-        display none !important
         margin: 0
         order: 2
         margin: 0 auto
         display: block
-
+        list-style circle
         span  
             font-size: 0;
-            color: #666666; 
+            color: #9e9e9e; 
             display: block;
-            text-align: center;
+
             margin-top: 10px;
-
+            font-weight: 700
             &:before
-                content: 'Restam apenas';
-                font-size 14px
-
+                content: 'Disponibilidade:';
+                font-size 12px
             b
-                color: $cor01
-                font-size 14px
                 margin-left 5px
+                font-size 12px
+                color: #9e9e9e; 
 
     .avisoIndisponivel
         margin: 10px 0
