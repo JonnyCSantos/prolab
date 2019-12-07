@@ -67,9 +67,10 @@
                     font-weight: 700
         .colunaProduto.coluna3
             width: 27%
-            padding: 30px
             margin-left: 25px;
-            border: 1px solid #ccc
+            .column-border
+                border: 1px solid #ccc
+                padding: 30px
             .fbits-preco
                 .precoPor
                     font-size: 22px
@@ -94,6 +95,14 @@
                             border-left-color: transparent
             #fbits-forma-pagamento
                 display: none
+            #msgEstoqueDisponivel
+                display: none
+            .btn-alerta-proposta
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column-reverse;
+                margin: 20px 0
     .ruler
         margin-top 0
     padding-top 20px
