@@ -1,4 +1,207 @@
-.header
+.head
+    & > .center 
+        margin-top 22px !important
+        margin-bottom 22px !important
+        & .top-icons 
+            display: flex
+            justify-content: space-between
+            color: #999999;
+            font-size: 14px;
+            font-weight: 400;
+            flex: 1
+            margin-left: 25px
+            & > div 
+                display: flex
+                justify-content: center
+                color: #999999;
+                font-size: 14px;
+                font-weight: 400;
+                height 36px
+                flex: 0 0 auto
+                width: initial !important
+                &.ico-carrinho
+                    margin-left: 20px
+                    & .icart
+                        content url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAiCAMAAADrsDC0AAABPlBMVEUAAAD/RET/RET/RET/Q0P/RET/RET/QkL/RET/Q0P/RET/RET/RET/RET/RET/RET/Q0P/RET/RUX/QUH/RET/AAD/RET/RET/RET/RET/RUX/Q0P/Rkb/RET/VVX/QED/RET/RET/RET/Q0P/RET/QED/Q0P/RET/Q0P/RUX/RET/Rkb/RET/RET/QED/Q0P/RUX/RET/RUX/OTn/RET/QED/RET/RET/Q0P/RET/RUX/Q0P/RET/RET/RUX/QED/RET/RET/RUX/RET/Q0P/SEj/RUX/RET/RET/RET/SUn/Rkb/RET/Q0P/RUX/QkL/RUX/Q0P/Q0P/RET/Rkb/RET/RET/gID/RET/RET/RET/RUX/QkL/Q0P/RET/QkL/Q0P/RUX/Q0P/RET/Q0P/RET/RUX/S0v/RET/REQZI5BiAAAAanRSTlMAw//nF+peG09Q3Jea0WH9gYBDJ/cB7de1jnpEQvMGDPywzmaWHFvSIonpPq/wBHarPGAJ+hjgzRPZgoz+s6AUx6K22DUgSmnvSwc3pt+YNjA5n94oz7ECwMJaRklfcDpMTr3KzOSREZnmZyPROwAAAR5JREFUeAGNynk7QkEUx/HjFJIsIbuuJYtwUbIvkn0RhSxkF+//DTDGjDvzzJznfv/7/Z4PVCEvEASyavyrhna1oTpWGOvBTxFs8OUasak5aq9FuFYkaxMu1k66DhB1kq5Lum7S9UjXS7G+uHROP+EG4L9Bwg15XIJwwx43Ymej4GnM7sbBW9LqJhQ3aWNTruKmbW4GlGZtLqW69JzFZVTnzJvZgsoWl9DcsupWcHVt3VBiQ3WbmAU/bWFue8dQUHMhtLSrwb19szsArcOj45Pwaf5Mdl4oFgsXoBe/xJ+u5C5ds31T0t0t/pYX+47ve91F+f8gdpnvsu5S/H8U+4nvZ92lc+x+iYntvrL95oJeJpt8/3BAVvn8CkQqwPoG4u4tBkoUTxwAAAAASUVORK5CYII=')
+                        margin-right: 11px
+                    & .carrinhoHead
+                        & > a 
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex: 0 0 auto;
+                            width: auto;
+                            line-height: 1;
+                            text-align: left;
+                            justify-content: flex-start;
+                            & > .minicart-qtde-itens
+                                flex: 0 0 100%;
+                                order: 3;
+                                height: auto;
+                                line-height: 1;
+                                margin-top: -20px;
+                                &:after 
+                                    content: " Itens";
+                                &:before 
+                                    content: none
+                            & > .minicart-txt-itens 
+                                flex: 0 0 auto;
+                                height: auto;
+                                line-height: 1;
+                                /* margin-left: 47px; */
+                                font-size: 0;
+                                &:before 
+                                    content: 'Carrinho';
+                                    font-size: 15px;
+                                    text-align: left;
+                &.ico-minha-conta
+                    display: flex !important
+                    justify-content: center
+                    &:before 
+                        content none
+                    & .fa-user-circle
+                        content url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAhCAMAAAAf6yCsAAAA21BMVEUAAAD/OTn/Q0P/RET/RET/RET/QkL/RET/RUX/RET/Rkb/RET/QUH/RET/RET/Rkb/Q0P/RET/RUX/Q0P/RET/Q0P/RET/Q0P/RUX/RET/RET/RET/RUX/Q0P/RUX/QUH/RET/RET/Rkb/RUX/RET/Q0P/QED/MzP/RET/RUX/RET/Q0P/Rkb/RUX/VVX/RET/RET/RET/QED/RET/Q0P/gID/Q0P/RET/RUX/RET/RET/RET/RET/RET/RET/RUX/Q0P/RET/Q0P/AAD/RET/RET/RUX/R0f/RUWP3vQeAAAASXRSTlMACW7C7v9J5Vn9LPgrtR4dY4SCiG0uz0WJe/x8JcFrJ6TxKErzmxAFOE7wjEIaBi339gTSagLfR0OVxvLkS/tGWPpEAd5Pqy96u3aslAAAAQFJREFUeNp10ttWglAUheEpshQz0/JUBqaJkqJZInZWzFPv/0QViq69Yf+3380aYy4cS2lpnfS0lkKsTJb2ZTMyGTmKyhkineXpVP5csALxCpwuSKzIrCRZidmlZFfMypKVmVUkqzCrSlYFqyZQDby6YHUm0jXXkLppHKRxK4JpNXHXav9Ju3WPpmWeqGMTdXtwzAfTQa9LZHci6of7DNzh6HE0dAfhTv09jZ8o3vP4nyYeJeVNAEwpuSngzxQ28/FCql7xpjQXntLe8aG0T3zNFTRfAMEykZZBuJ2eQPo3wopWjKzjh66MtSBrY4VT/mZrH8DebnxIObtA+9GCnYOoX5XiHJhurSSCAAAAAElFTkSuQmCC')
+                & .fa-headphones
+                    &:before 
+                        content url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAABSlBMVEUAAAD/gID/Rkb/RUX/RET/RET/RET/AAD/RUX/RET/QED/RET/RET/Q0P/RET/RET/RET/RET/QUH/Rkb/RET/RET/Q0P/QED/QED/RET/Q0P/RET/RUX/RET/RET/RET/RUX/RET/Q0P/RET/RET/RET/QkL/RUX/RET/RUX/RET/RUX/QkL/RET/RET/RET/RET/QkL/R0f/QUH/Rkb/Q0P/RUX/RET/VVX/MzP/RET/RET/RUX/RUX/RET/Q0P/RUX/RET/RET/RET/RET/RET/RET/RET/RET/SUn/RET/R0f/RUX/RET/Q0P/QED/RET/RET/RUX/Rkb/SUn/VVX/RET/RUX/Q0P/Q0P/RET/RET/RUX/RUX/Rkb/RUX/RUX/RUX/RET/RET/RET/Q0P/RET/Rkb/Rkb/Q0P/RUX/QED/Ozv/Q0P2jA+JAAAAbnRSTlMAAkKRy/H/AV3aHL/33y3o3HQrKO3vYwQM2SKO4x77/juLo+TWyBsaxln8NDIp+NO1HyQnLCqC+QYF9MCrp+mboOCzsazb12kPDvMvif0TEKWk1AsVAzxVcq6wMcVDM29zuk9A7kySFj55RggN0MO8x9oAAAGdSURBVDjLfZRXW8JQDIaDlLBlgwgKgosqoIB74gIR9wL3nvD/bz1tU2hPeczVly/v0yYnpwXohqnPLFgQLYK5zwS9wmqzYyfsNquRcDjlmsvtdsnC6eCJfg+zvT6/pP0+L0s8/XoiEEQMhSNqGgmHEIMBLTEQZY8Y1DqD7EHRAY0RQ4xz73bEEWPddGgYE0m+u2QCh4c62QhiyjhjCnGkk6QR/UbEj5jujIM42uswRxHVocKIY+NGYmISMazIjMgOKjTFE9PsaFDMSDKbkw88zy3FmpftXJbpGdrcrB4pkD0DUFSXW9Ijc6pfhHlSC4t6ZGmZCvOwQkrg2xWosAIeUqs8skaFdRBJbfDIBhVEcJHa5JFNKrigTGqLR7apUIYdUrs8skeFHaio81f1xL7qV6BaI3mgR0pk1/YB6oo8PNIjxwnFr0tX2yvLE76XU9n2yle8cCZt65xHLqQO8gUluby6ph02mjcsmg0mb+9YH/eGb/tBneLx6Vlq78V4FV9RG2/v8D9S+/jsdeW/1Hrz++e35x8GWm2FaLe07h/NQCzmjbbphQAAAABJRU5ErkJggg==')
+                        color: #ff4444
+                & .texts
+                    display: flex
+                    flex-flow: column nowrap
+                    justify-content: center
+                    align-items: flex-start
+                    line-height: 1
+                    height 36px
+                    margin-left: 15px
+                    & span 
+                        color: #999999;
+                        font-size: 14px;
+                        font-weight: 500;
+                    & a 
+                        color: #333333;
+                        font-size: 14px;
+                        font-weight: 500;
+                        position relative !important
+                        text-align: left
+        & .div-busca-desktop
+            width: 430px
+        & .headerSearch  
+            width: 100%
+            & form 
+                & input.inputSearch[type="text"] 
+                    height: 40px;
+                    border: 1px solid #d9d9d9;
+                    background-color: #ffffff;
+                & #btnBusca
+                    /* Style for "Rectangle" */
+                    width: 40px !important
+                    height: 40px !important
+                    background-color: #ff4444 !important
+                    display: flex
+                    justify-content: center
+                    align-items: center !important
+                    line-height: 1
+                    & > i 
+                        color: #FFFFFF !important
+    & .topBar
+        background-color: #000000
+        height 53px
+        & .center
+            height 100%
+            max-height: 100%
+            padding: 0
+            margin: 0 auto
+            & .prolab
+                &-topbar
+                    background-color: #000000
+                    height 100%
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    & i 
+                        color: #ff4444
+                        font-size: 15px
+                    & .topbar-offer
+                        flex 0 0 auto
+                        padding: 0 25px
+                        position relative
+                        &:nth-child(5)
+                            &:after 
+                                content: none !important
+                        &.socials
+                            flex: 1
+                            justify-content: center
+                            display: flex
+                            & a  
+                                display: inline-block
+                                margin-left: 11px
+                                font-size: 15px;
+                                &:hover 
+                                    & i 
+                                        color: #FFFFFF
+                        &.white
+                            flex: 0 0 244px
+                            padding: 0
+                            background-color: #FFFFFF
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            color: #333333;
+                            font-size: 13px;
+                            font-weight: 700;
+                            line-height: 20px
+                            height 100%
+                            @media screen and (min-width: 1024px)
+                                margin-left: 30px
+                            &:after 
+                                content none !important
+                            & .fa-file-invoice-dollar
+                                width: 27px
+                                height 27px
+                                display: inline-block
+                                font-family: initial !important
+                                margin-right: 12px
+                                &:before
+                                    content ''
+                                    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjciIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCAyNyAyNyI+PGc+PGc+PGltYWdlIHdpZHRoPSIyNyIgaGVpZ2h0PSIyNyIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFCc0FBQUFiQ0FZQUFBQ04xUFJWQUFBRGZrbEVRVlJJUzYyV1hXZ2NWUlRIZjJkMlNiUVdXMHFMd2RhOVoyZkdSb09RV2hBVVArcWJTRVY4OE1GYXFCYWg0TWVEeFFjL0VEOFFLU2hLWHlVdmFkR0twUmFwV0pBaUZxd2dGUkZCU21venV6TmhUVVVmeEplYVRXYm55R3lhdWxsM2wwenFmUnZtM3Y5dnpwbi9PZmNJWGN0M2JyZkFKRWk1KzkzS251M1ZLRW5lenZlR204TXRWazdQRzdhbmxpU2ZTcWZBSWtnT0F4N0l0NWhOcnd3QUNFUEFMb3hEMFV6OFpCdW1lcjhaWDR2dzVuUWN2M0VGMWdISzkza0llNk00bmx3cFRGWFhsNHcvbDJDaGMzY1o4aFZ3YmE0aDJBdHRtSys2UzR3UGdZc2dCOEhleldITk5QMWt1RlE2SWNpbWZsQ0RsZ2pQcGpEVkNRc3EraG5DZ3doUFlMd0diSmJ3cHVyRDV0bXhSYm84WXpBQzl0YS9zUElYQWhzR3dES3c1MW9pNTViQm5KNEdORXBpRFNvNm1VTWxjRG9IREhlTEdiYTdsaVJIVnB2R29BL01FTDQzNkJTZW01dWZQenc3TzlzTVZOOGpZLzBBcUZuWk81QmwyZThyaWN3NkhkUXBHb2JoOWJhUTVvN3MrOCtBbHBuM1NPWmxaNjRLdHRJVTV2dTYzZGcvalpkcnczZHVweWR5UnhHSW1hU1p4NFNaTlF0RkZxaWV4U2dFeXo4c04xTW1jcklRelBmOWRhVXNxeGFKRExQbWhTU1pVdFYxUFdEM0FBMkRqUUxYNWRidmFSQlZIU2xuMllicG1abHpTL0RRdWR0TnhIVitqTFFrbTdPRlUrVnllYmdIN0U3Z08rQVc0SWErc0VEMUtNWjlVUktQTElrSFRuL0xEL1dveWFjeWtlT0YwcmdrVXExV1J6Mnp6ekZjWnZKUWZhWitxdDFZaTBmMm53NnlMSTFqbThiV050ZGN1bHhibG9GNG1TZmI2L1g2VDF0djNMclJodWEzTEl0czhEOGJEQXRWZDVoeEd1TkZzdEp4SzZXdmwxdXRsMzVwTkg0Tm5DWkFwVmRySyt6R1hHVFV1V3FLUkVCTmhHTXBUTVp4UE5WT1k2WDZLSjdkMWdsYmRaMHRpZmlxVDR2Wk95QnJnVXZXOHJiVkdyVUxnMHFpY0FmcE1JaHJOcHQvckNrUDd6U3hveUs4TWgzSEJ3S25Qd0RidTZDcjc0MnFlazNKK0F2c0xDSTFqRDJZN0l0bTZoT2g2c3VXTWRvRnU3cXU3enQ5WDJCL1cxVDRwcG1tRHpRYWpiK0xwTkd2NkpjaTNGdGFHS3EwaHVaUFlvejNMV3BmOVlRWU82SWt6dTh5eTBHQjB5TUNZOHNNQXIxdmF0WEhNRDV1RDA3WTNSZ2ZESUx0RlJpUDR2ajVLeDFFOVpBWTQxMnduak5JUGpRRlRuOEdiZ1VXck9TRmZXR0ZtbkdQK3l3Lzd6djN1Q0FmZ1UxRVNiSnZFUVlSeHBtaWdHWDdlOHlOTjZ0dXk0d2ZUZGhmaStPRE9ld2k3WW5xLzFyOUorSi9BTnF0MGFveThjVURBQUFBQUVsRlRrU3VRbUNDIi8+PC9nPjwvZz48L3N2Zz4=')
+                                    width: 27px
+                                    height 27px
+                                    background-size: 100%
+                                    background-position: center 
+                                    background-repeat: no-repeat
+                                    display: block
+                            & span 
+                                display: flex
+                                flex-flow: column nowrap
+                                justify-content: center
+                                & h2 
+                                    text-transform: uppercase
+                                    font-weight: 700;
+                                    font-size: 13px;
+                            & a 
+                                color: #ff4444;
+                                font-weight: 700;
+                                text-decoration: underline;
+                            & i 
+                                font-size: 30px
+                        & a 
+                            color: #ffffff;
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-decoration: none
+                            &:hover
+                                text-decoration: underline
+                        &:not(:last-child)
+                            &:after 
+                                content: ''
+                                width: 1px
+                                height 15px
+                                background-color: #333333
+                                position: absolute
+                                right -0.5px
+                                top: 50%
+                                margin-top: -7.5px
+
+.header 
     position: fixed
     top: 0
     left: 0

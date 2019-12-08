@@ -78,9 +78,13 @@ html
                 justify-content: space-between
                 align-items: flex-start
                 margin-bottom: 30px
+                @media screen and (max-width: 992px)
+                    flex-direction: column
                 &-item
                     flex: 0 0 calc(33.333333333% - 20px)
                     transition: all 200ms ease-in
+                    @media screen and (max-width: 992px)
+                        flex: 0 0 auto
                     &:hover
                         transform: perspective(1000px) translateZ(-50px);
             &__lower2
@@ -259,9 +263,24 @@ html
                     height 460px
                     max-height: 460px
                     width: 100%
+                    @media screen and (max-width: 992px)
+                        flex-wrap: wrap
+                        height auto
+                        max-height: 1000px
+                        margin 0 auto
+                        margin-bottom: 30px
+                        width: 250px
+                        & .fbits-componente-listaSpot 
+                            margin-left: -5px
+                            margin-right: -5px
                 &-imagem
                     flex: 0 0 250px !important
                     margin-top: 10px
+                    @media screen and (max-width: 992px)
+                        flex: 0 0 100% !important
+                        & > .fbits-banner-item 
+                            display: flex
+                            justify-content: center
                     & img
                         &:hover
                             box-shadow: 0 0 10px rgba(0, 0, 0, 0.22), 0 0 7px rgba(255, 255, 255, 0.35);
@@ -269,6 +288,13 @@ html
                     flex: 0 0 calc(100% - 250px) !important
                     max-width: calc(100% - 250px) !important
                     width: calc(100% - 250px) !important
+                    @media screen and (max-width: 992px)
+                        flex: 0 0 100% !important
+                        max-width: 100% !important
+                        width: 100% !important
+                        & .fbits-item-lista-spot
+                            height 340px
+                            max-height: 340px
                     & .fbits-item-lista-spot
                         border: 1px solid #e1e1e1 !important
                         margin: 0 6px
@@ -335,6 +361,21 @@ html
                                         content: 'ver mais detalhes'
                                 & .bt.adicionar
                                     display: none
+@media screen and (max-width: 992px)
+    .row-vitrine-home
+        display: flex
+        flex-direction: column
+        & > .line
+            display: flex
+            flex-direction: column
+            order 1
+            & > h3 
+                padding: 0
+            & .vitrine-produtos-nav
+                position relative
+                margin-top: 0 !important
+            & .title
+                order: 1
 .fullbanner
     margin-top: 148px;
     .slick-dots
