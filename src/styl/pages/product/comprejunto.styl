@@ -299,24 +299,39 @@ a#btnContinuarComprando
 .divPaiCarrosselCompreJunto
     height auto
     background-color: transparent 
-    padding: 55px 25px 25px 25px
+    padding: 75px 25px 25px 25px
     position relative
+    
+    
     &:before
         content: 'APROVEITE E '
-        font-size: 14px
+        font-size: 16px
         font-weight bold
-        color: $cor02
+        color: #000
         position absolute
         top: 25px
-        left: 25px
+        left: 55px
     &:after
         content: 'COMPRE JUNTO'
-        font-size: 14px
+        font-size: 16px
         font-weight bold
-        color: $cor01
+        color: #4fb36b
         position absolute
         top: 25px
-        left: 128px
+        left: 160px
+
+    .fbits-comprejunto1
+        width: 15%
+    .fbits-comprejunto2
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 380px;
+        .spotRecomendadoText
+            margin-right 5px
+            .spotTitle
+                font-size: 14px
+                font-weight: 600
     .precoDe
         float none
         width auto 
@@ -325,9 +340,9 @@ a#btnContinuarComprando
     .precoPor
         width auto 
         display inline-block
-        font-size 15px!important
+        font-size 18px!important
         line-height normal
-        color #ee3a53
+        color #000
         margin 0
 
         &:before
@@ -347,17 +362,17 @@ a#btnContinuarComprando
     
     [id*=produto-item]
         position relative
-        padding 0 30px
         .fbits-comprejunto3
             position absolute
             right: 30px
-            bottom 0px
-            width: 190px
+            top: 0
+            width: 165px
             height 40px
-            background-color: #f3f3f3
+            background-color: #d7d7d7
             display flex
             justify-content: center
             align-items: center
+            text-transform uppercase
             span.fbits-adicionar-produto
                 margin 0
         @media(max-width: 991px)

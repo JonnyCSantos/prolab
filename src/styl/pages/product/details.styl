@@ -361,20 +361,29 @@ section.descricao__produto
         font-size: 16px
         color: #333333
         line-height: 18px
- 
 
+.informacao-abas
+    .ui-slider-tabs-content-container
+        .ui-slider-tabs-list-wrapper
+            display: none
+        
+.ui-slider-tabs-list
+    li
+        border: 1px solid #ccc !important
+        padding: 0 20px !important
+        border-bottom: none !important
 .ui-slider-tabs-list li.selected
-    background-color: transparent
-    border-bottom: 4px solid $cor01!important
-   
+    background-color: #ebebeb
     a
         h3
             color #333333
-            font-size: 20px
-            font-weight 700
+            font-size: 18px
+            font-weight 600
 
             @media(max-width 425px)
                 font-size 15px
+    &:hover
+        background-color #ebebeb !important
   
 .ui-slider-tab-content
     padding: 0!important
