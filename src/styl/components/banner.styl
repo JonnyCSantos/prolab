@@ -41,6 +41,8 @@ html
                 display: flex
                 justify-content: space-between
                 align-items: center
+                @media screen and (max-width: 480px)
+                    display: none
                 & > button 
                     position relative
                     top initial 
@@ -231,6 +233,8 @@ html
                     margin: 0
                     margin-left: auto
                     margin-top: -27px
+                    @media screen and (max-width: 480px)
+                        display: none
                     & .slick-disabled
                         opacity 0.6 !important
                     & .slick-prev
@@ -377,7 +381,7 @@ html
         & > .line
             display: flex
             flex-direction: column
-            order 1
+            order 0
             & > h3 
                 padding: 0
             & .vitrine-produtos-nav
