@@ -80,6 +80,7 @@ html
                 margin-bottom: 30px
                 @media screen and (max-width: 992px)
                     flex-direction: column
+                    padding: 0 10px
                 &-item
                     flex: 0 0 calc(33.333333333% - 20px)
                     transition: all 200ms ease-in
@@ -89,6 +90,8 @@ html
                         transform: perspective(1000px) translateZ(-50px);
             &__lower2
                 margin-bottom: 30px
+                @media screen and (max-width: 480px)
+                    padding: 0 10px
         .row 
             & .line
                 text-align: center
@@ -118,6 +121,8 @@ html
                     min-height: initial !important
                     transition: all 200ms ease
                     margin-top: 10px
+                    @media screen and (max-width: 660px)
+                        height 345px !important
                     &:hover
                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.22), 0 0 7px rgba(255, 255, 255, 0.35);
                     & .spot
@@ -201,6 +206,9 @@ html
                         max-width: 100% !important
     & .fbits-vitrine-home
         overflow: initial !important
+        @media screen and (max-width: 480px)
+            padding-left: 10px !important
+            padding-right: 10px !important
         & .row-vitrine-home
             & .line
                 text-align: center
@@ -269,7 +277,7 @@ html
                         max-height: 1000px
                         margin 0 auto
                         margin-bottom: 30px
-                        width: 250px
+                        width: 100%
                         & .fbits-componente-listaSpot 
                             margin-left: -5px
                             margin-right: -5px
@@ -278,6 +286,7 @@ html
                     margin-top: 10px
                     @media screen and (max-width: 992px)
                         flex: 0 0 100% !important
+                        display: none !important
                         & > .fbits-banner-item 
                             display: flex
                             justify-content: center

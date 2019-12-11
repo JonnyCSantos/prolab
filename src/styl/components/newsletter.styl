@@ -130,8 +130,12 @@ html body .footer
             display: flex
             justify-content: space-between
             margin-bottom: 45px
+            @media screen and (max-width: 992px)
+                flex-wrap: wrap
             & .pagamentos
                 flex: 0 0 calc(40% - 50px)
+                @media screen and (max-width: 992px)
+                    flex: 0 0 100%
                 & > section 
                     display: flex 
                     flex-flow: column nowrap
@@ -150,6 +154,8 @@ html body .footer
                             justify-content flex-start
                             flex-wrap: wrap
                             align-items: center
+                            @media screen and (max-width: 992px)
+                                display: flex !important
                             & > span 
                                 line-height: 1
                                 vertical-align: middle
@@ -157,15 +163,23 @@ html body .footer
                 flex 0 0 calc(60% - 50px)
                 display: flex
                 justify-content: space-between
+                @media screen and (max-width: 992px)
+                    flex: 0 0 100%
+                    flex-wrap: wrap
                 & > section 
                     flex 0 0 auto
                     width: auto
+                    @media screen and (max-width: 992px)
+                        flex: 0 0 100%
+                        width: 100%
                     & > ul 
                         color: #333333;
                         font-size: 14px;
                         font-weight: 400;
                         line-height: 30px;
                         width: auto
+                        @media screen and (max-width: 992px)
+                            width: 100%
                         & > strong 
                             font-weight: 700
                         & > li 
@@ -216,12 +230,22 @@ html body .footer
             font-weight: 400;
             line-height: 24px;
             text-align: left 
+            @media screen and (max-width: 480px)
+                flex-wrap: wrap
             & .texts
                 flex: 1
                 margin-left: 30px
+                @media screen and (max-width: 480px)
+                    margin-left: 0
+                    text-align: center
+                    & tr 
+                        display: flex;
+                        flex-wrap: wrap;
                 & td 
                     padding: 0 10px
                     vertical-align: top
+                    @media screen and (max-width: 480px)
+                        padding 0
         & h3
             color: #ff4444;
             font-size: 25px;
@@ -243,6 +267,9 @@ html body .footer
         height 80px
         margin: 0
         margin-top: 30px
+        @media screen and (max-width: 480px)
+            flex-wrap: wrap
+            height auto
         &-column
             flex: 0 0 50%
             display: flex
@@ -251,7 +278,16 @@ html body .footer
             align-items: center
             &.input
                 padding 0 25px
+                @media screen and (max-width: 480px)
+                    flex 0 0 100%
+                    width: 100%
+                    padding: 0
+                    display: flex
+                    flex-wrap: wrap
+                    height auto
             &:first-child
+                @media screen and (max-width: 480px)
+                    display: none !important
                 & a 
                     display: flex
                     justify-content: center
@@ -264,6 +300,12 @@ html body .footer
                     transition: all 200ms ease-in
                     &:hover
                         transform: perspective(1000px) translateZ(50px);
+                    @media screen and (max-width: 480px)
+                        max-width: initial
+                @media screen and (max-width: 480px)
+                    width: 100%
+                    flex: 0 0 100%
+                    overflow hidden
             &-title
                 flex: 0 0 180px
                 color: #ffffff;
@@ -271,6 +313,10 @@ html body .footer
                 font-weight: 700;
                 text-transform: uppercase;
                 text-align: left 
+                @media screen and (max-width: 480px)
+                    flex: 0 0 100%
+                    text-align: center
+                    margin-top: 15px
             &-input
                 flex: 1
                 & .footerNewsForm
@@ -278,6 +324,12 @@ html body .footer
                     height 100%
                     margin-left: 20px
                     justify-content: flex-end
+                    @media screen and (max-width: 480px)
+                        display: flex
+                        flex-wrap: wrap
+                        justify-content: center
+                        margin-left: 0
+                        padding:15px 10px
                     & .btNews
                         width: 50px
                         height 30px
@@ -288,10 +340,18 @@ html body .footer
                         text-transform: uppercase;
                         margin: 0
                         margin-left: 4px
+                        @media screen and (max-width: 480px)
+                            width: 100%
+                            margin-left: 0
                     & .newsletter-box
                         display: flex
                         flex-flow: row nowrap
                         justify-content: space-between
+                        @media screen and (max-width: 480px)
+                            display: flex
+                            flex-wrap: wrap
+                            justify-content: center
+                            margin-left: 0
                         & input
                             flex: 0 0 calc(50% - 4.5px)
                             height 30px
@@ -300,6 +360,8 @@ html body .footer
                                 font-family: "Open Sans";
                                 font-size: 14px;
                                 font-weight: 400;
+                            @media screen and (max-width: 480px)
+                                flex: 0 0 100%
                         &:nth-child(2)
                             display: none
 //Conteúdo
@@ -313,3 +375,5 @@ html body .footer
             background-size: 101%
             background-position: center -1px
             background-repeat: no-repeat
+            @media screen and (max-width: 480px)
+                background-size: auto 100%

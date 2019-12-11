@@ -247,6 +247,16 @@ $(document).ready(function() {
             .addClass("spot__request");
     });
 
+    if ($(window).width() < 500) {
+        $(
+            'html body .vitrine-produtos-container-rows .vitrine-produtos-lista > span[id*="fbits-grupo"]'
+        ).slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: false
+        });
+    }
+
     if ($(window).width() < 1250) {
         $(".header__topbar-list").slick({
             slidesToShow: 2,

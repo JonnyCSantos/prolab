@@ -27,6 +27,22 @@
                     align-items: center
                     position static
                     margin-bottom: 0
+                    & > a 
+                        line-height: 1
+                        color: #333;
+                        font-family: "Open Sans";
+                        font-size: 0.88rem;
+                        font-weight: 700;
+                        text-transform: initial;
+                        cursor: pointer;
+                        height 100%
+                        display: flex
+                        align-items: flex-start
+                        border-bottom: 0
+                        margin-bottom: 0
+                        border-top: 0
+                        justify-content: center
+                        padding-top: 17px
                     &:hover
                         & > ul 
                             display: flex
@@ -66,13 +82,16 @@
                                 text-decoration: none
                                 &:hover
                                     text-decoration underline 
+                    & > a
+                        color: #333333
                     & > span 
                         height 100%
                         display: flex
                         justify-content: center
                         align-items: center
-                        color: #333333
-                        cursor: pointer
+                        &, & a 
+                            color: #333333
+                            cursor: pointer
                     & > ul 
                         position: absolute
                         display: none
