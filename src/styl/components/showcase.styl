@@ -33,7 +33,7 @@ html
                             height 880px !important
                             padding-bottom: 60px
                         @media screen and (max-width: 660px)
-                            display: block !important
+                            display: flex !important
                         & > div 
                             flex: 0 0 calc(20% - 13px)
                             margin: 0 6px !important
@@ -42,14 +42,13 @@ html
                             @media screen and (max-width: 480px)
                                  margin: 0 !important
                                  height auto !important
+                                 flex 0 0 50%
                             &:hover 
                                 box-shadow: none !important
                             & > div 
                                 border: 1px solid #e1e1e1 !important;
                                 &:hover 
                                     box-shadow: 0 0 10px rgba(0,0,0,0.22)
-                                @media screen and (max-width: 480px)
-                                    border: 0 !important
 .showcase
     padding: 60px 0
     @media(max-width : 991px)
