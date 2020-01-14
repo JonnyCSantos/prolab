@@ -612,3 +612,78 @@ ul#ulGrupoProduto
  
 div#divCompreJunto
     float none
+    .line,
+    h3#divTitulo
+        display: none
+    #ulGrupoProduto
+        border: 1px solid #cecece
+        padding: 20px
+        #divFormaPagamento
+            float: none
+        .borderVejaTambem
+            margin: 0
+            padding: 0
+        [id*="view-item-quantidade"]
+            margin: 0
+    .fbits-titulo-quantidade
+        display: none
+    .divisorIgual,
+    .divisor
+        &:before
+            background-color: #ff4446
+            margin-top: 70px
+
+    #divFotosProduto-Principal
+        border: 1px solid #cecece
+        padding: 10px
+    .nomeRecomendado
+        h3
+            font-size: 14px
+            font-weight:500
+            margin-top: 10px
+    .spotVejaTambem.produtoRecomendadoComprar
+        border: 1px solid #cecece
+        margin-top: 0
+        .precoPor
+            color: #333
+            font-size: 22px
+            font-weight: 700
+            margin: 0
+    #btnComprarTodos
+        background: #189E60
+        cursor: pointer
+        color: #fff
+        font-weight: 600
+        border-radius: 2px
+        align-items: center
+        justify-content: center
+        text-transform: uppercase
+        display: flex
+        height: 66px
+        width: 100%
+        text-decoration: none
+        transition: $transition
+        font-size: 16px!important 
+        &:after
+            font-size: 0
+        &:before
+            @extend $ico-before
+            background-image url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz48cGF0aCBkPSJNNDQ3Ljk4OCwxMzkuNjk2Yy0wLjE1Ni0yLjA4NC0xLjktMy42OTYtMy45ODgtMy42OTZoLTcydi0yMEMzNzIsNTIuMDM2LDMxOS45NiwwLDI1NiwwUzE0MCw1Mi4wMzYsMTQwLDExNnYyMEg2OGMtMi4wODgsMC0zLjgzMiwxLjYxMi0zLjk4OCwzLjY5NmwtMjgsMzY4Yy0wLjA4NCwxLjEwOCwwLjI5NiwyLjIwNCwxLjA1NiwzLjAyQzM3LjgyNCw1MTEuNTM2LDM4Ljg4OCw1MTIsNDAsNTEyaDQzMmMxLjExMiwwLDIuMTc2LTAuNDY0LDIuOTMyLTEuMjhjMC43NTYtMC44MTYsMS4xNC0xLjkxMiwxLjA1Ni0zLjAyTDQ0Ny45ODgsMTM5LjY5NnogTTE3MiwxMTZjMC00Ni4zMTYsMzcuNjgtODQsODQtODRzODQsMzcuNjg0LDg0LDg0djIwSDE3MlYxMTZ6IE0xNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMxOTYsMjMwLjA1NiwxNzguMDYsMjQ4LDE1NiwyNDh6IE0zNTYsMjQ4Yy0yMi4wNiwwLTQwLTE3Ljk0NC00MC00MGMwLTE1Ljk2NCw4LTMwLjM0OCwyNC0zNi42NlYyMDhjMCw4LjgyNCw3LjE4LDE2LDE2LDE2czE2LTcuMTc2LDE2LTE2di0zNi42MzZjMTYsNi4zMTIsMjQsMjAuODA0LDI0LDM2LjYzNkMzOTYsMjMwLjA1NiwzNzguMDYsMjQ4LDM1NiwyNDh6Ii8+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=')
+            transition: $transition
+            width: 23px
+            height: 23px
+            background-size: 23px
+            margin-right 5px
+    @media(max-width: 991px)
+        #btnComprarTodos
+            font-size: 12px!important 
+        .divisor
+            position: relative
+            left: initial 
+            top: initial 
+            right: initial
+            transform: initial
+            margin: 0
+            margin-bottom: 10px
+            &:before
+                margin: 0 auto
