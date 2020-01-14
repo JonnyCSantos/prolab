@@ -344,3 +344,22 @@ if ($(window).width() < 992) {
     arrows: false
   });
 }
+
+// quantidade prod
+$(document).ready(function() {
+	$('#item-quantidade-1')
+		.hide()
+		.before(
+			"<span id='menosQtd'>-</span><input id='item-quantidade-1' value='1' type='text' min='1' max='999' class='qtdProduto'/><span id='maisQtd'>+</span>",
+		);
+	$('select#item-quantidade-1').remove();
+
+	$('#item-quantidade-2')
+		.hide()
+		.before(
+			"<span id='menosQtd'>-</span><input id='item-quantidade-2' value='1' type='text' min='1' max='999' class='qtdProduto'/><span id='maisQtd'>+</span>",
+		);
+	$('select#item-quantidade-2').remove();
+
+	$('div#view-item-quantidade-0-normal').css('opacity', '1');
+});

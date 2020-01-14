@@ -121,7 +121,6 @@
 }
 
 [id*="view-item-quantidade"]
-    display none !important
     width: 100%
     text-align: center
     margin: 15px 0
@@ -130,11 +129,10 @@
     max-width: 100%
 
     .fbits-titulo-quantidade.atributo-div
-        font-size: 12px
-        text-transform: uppercase!important
+        font-size: 14px
         line-height: 1.2
         text-align: left      
-        color: #353535
+        color: #333333
         text-transform: none
         font-weight: 400
         margin-right 5px
@@ -145,13 +143,20 @@
     #menosQtd 
         font-size: 20px
         font-weight: 400
-        cursor pointer
+        cursor pointer  
+        width: 40px
+        height 30px
+        border: 1px solid #cecece
+        margin-right -1px
 
    #maisQtd 
         font-size: 20px
         font-weight: 400
         cursor pointer
-
+        width: 40px
+        height 30px
+        border: 1px solid #cecece
+        margin-left -1px
     @media(max-width: 768px)
         margin: 0
 
@@ -159,18 +164,17 @@
         display: none
 
     #item-quantidade-1
-        border: none
-        color: #979797
+        border: 1px solid #cecece
+        color: #333
         font-size: 15px
         line-height: 16px
-        font-weight: 600
+        font-weight: 400
         text-indent: 0
         text-align: center
         background: none
-        width: 40px
-        height: 40px
+        width: 80px
+        height: 30px
         border-radius: 1px
-        font-style: italic
 
 [id*="produto-variante"]
     float: none
@@ -196,11 +200,10 @@
         background-color: $cor01
         background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEwcHgiIGhlaWdodD0iNTEwcHgiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTAgNTEwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGcgaWQ9InNob3BwaW5nLWNhcnQiPjxwYXRoIGQ9Ik0xNTMsNDA4Yy0yOC4wNSwwLTUxLDIyLjk1LTUxLDUxczIyLjk1LDUxLDUxLDUxczUxLTIyLjk1LDUxLTUxUzE4MS4wNSw0MDgsMTUzLDQwOHogTTAsMHY1MWg1MWw5MS44LDE5My44TDEwNy4xLDMwNmMtMi41NSw3LjY1LTUuMSwxNy44NS01LjEsMjUuNWMwLDI4LjA1LDIyLjk1LDUxLDUxLDUxaDMwNnYtNTFIMTYzLjJjLTIuNTUsMC01LjEtMi41NS01LjEtNS4xdi0yLjU1MWwyMi45NS00My4zNWgxODguN2MyMC40LDAsMzUuNy0xMC4yLDQzLjM1LTI1LjVMNTA0LjksODkuMjVjNS4xLTUuMSw1LjEtNy42NSw1LjEtMTIuNzVjMC0xNS4zLTEwLjItMjUuNS0yNS41LTI1LjVIMTA3LjFMODQuMTUsMEgweiBNNDA4LDQwOGMtMjguMDUsMC01MSwyMi45NS01MSw1MXMyMi45NSw1MSw1MSw1MXM1MS0yMi45NSw1MS01MVM0MzYuMDUsNDA4LDQwOCw0MDh6Ii8+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=')
         background-repeat: no-repeat
-        background-position 25%  
+        background-position 10%  
         background-size: 25px
         cursor: pointer
         color: #fff
-        font-size: 20px !important
         font-weight: 700
         border-radius: 2px
         align-items: center
@@ -212,6 +215,17 @@
         text-decoration: none
         transition: $transition
         padding-left 25px
+        font-size: 0px !important
+        &:before
+            content: 'Adicionar ao carrinho'
+            font-size: 15px !important
+            text-transform uppercase
+            margin-left 10px
+        @media(max-width: 768px)
+            background-position 5%  
+            &:before
+                font-size: 12px !important
+                margin-left: 15px
         &:hover
             opacity .9
 

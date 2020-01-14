@@ -22,6 +22,10 @@
             img
                 border: 1px solid #ccc !important
                 margin-bottom: 20px
+
+    .ui-slider-tabs-list-wrapper
+        display: none
+    
     .detalhe-produto
         div#imagem-pagina-produto
             width: 40%
@@ -45,7 +49,7 @@
                 width: 100%;
                 position: absolute 
                 top: 0px
-                left: 85px
+                left: 105px
                 font-size: 0
                 color: #777
                 &:before
@@ -66,8 +70,18 @@
                 float: none
                 text-align: left
                 font-size: 12px
-                font-weight: 700;
-                color: #9e9e9e
+                font-weight: 400;
+                color: #696969
+                display flex
+                align-items: center
+                justify-content: flex-start
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 2px
+                    height: 2px
+                    background-color #696969
+                    margin-right: 5px
             .short-desc
                 margin-top 20px
                 .paddingbox
@@ -127,8 +141,11 @@
                 flex-direction: column-reverse;
                 margin: 20px 0
         .produtoInfo-title.colunaWide
-            max-width: 773.5px
-            width: 59.5%
+            max-width: 100%
+            width: 100%
+            float: initial !important
+            margin-top 10px
+            display: block
             @media(max-width: 1150px)
                 margin: 20px auto  !important
                 max-width 100%
@@ -185,26 +202,31 @@
                             font-weight: bold
 
     #avaliacao-Produto
-        max-height: 180px
-        overflow: hidden
-
-        &:before
-            content: 'Leia mais'
-            position: absolute
-            bottom: 0
-            left: 50%
-            transform: translateX(-50%)
-            color: #333
-            text-decoration: underline
-            font-weight: 600
-            font-size: 15px
-            cursor pointer
-            display: block
-            width: 100%
-            text-align: center
-            background: white
-            z-index: 1
-
+        float: none
+        
+        // &:before
+        //     content: 'Leia mais'
+        //     position: absolute
+        //     bottom: 0
+        //     left: 50%
+        //     transform: translateX(-50%)
+        //     color: #333
+        //     text-decoration: underline
+        //     font-weight: 600
+        //     font-size: 15px
+        //     cursor pointer
+        //     display: block
+        //     width: 100%
+        //     text-align: center
+        //     background: white
+        //     z-index: 1
+        @media(min-width: 992px)
+            .opinioesConteudo
+                float: none
+                blockquote
+                    width: 20%
+                .reviewMeta
+                    width: 10%
     .open__item
         max-height: none!important
         
@@ -212,13 +234,46 @@
             content: 'Leia menos'!important
             background: transparent!important
 
+    h2.title-prod-section
+        font-weight: normal;
+        margin: 0 auto;
+        position: relative;
+        background: #FFF;
+        z-index: 1;
+        font-size: 1.38rem;
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+        text-align center
+        margin-top: 80px
+    .divOpinioes
+        h3
+            font-size: 0px
+        &:before
+            content: 'Opinião dos Consumidores'
+            display: block
+            font-weight: normal;
+            margin: 0 auto;
+            position: relative;
+            background: #FFF;
+            z-index: 1;
+            font-size: 1.38rem;
+            font-weight: 700;
+            color: #000;
+            text-transform: uppercase;
+            text-align center
+            border-bottom: 1px solid #cecece
+            padding-bottom: 10px
+            margin-top: 80px
+        &:after
+            display: none
     @media(max-width: 991px)
-        padding-top: 150px
+        padding-top: 50px
 
     footer
         margin-top 30px
         border-top: 1px solid #cecece
-
+        padding-top: 20px;
     li.todas-categorias
         left: 0!important
 
@@ -349,18 +404,24 @@
         list-style circle
         span  
             font-size: 0;
-            color: #9e9e9e; 
+            color: #4eb26c; 
             display: block;
 
             margin-top: 10px;
-            font-weight: 700
+            font-weight: 400
+            display flex
+            align-items: center
+            justify-content: flex-start
             &:before
-                content: 'Disponibilidade:';
+                content: '• Disponibilidade:';
                 font-size 12px
+                color: #696969; 
+                font-weight: 400
             b
                 margin-left 5px
                 font-size 12px
-                color: #9e9e9e; 
+                color: #4eb26c; 
+                font-weight: 700
 
     .avisoIndisponivel
         margin: 10px 0
@@ -1812,12 +1873,20 @@ div#fbits-avaliar-produto
     justify-content: space-between;
     flex-wrap: wrap
     margin 80px 0
+    @media(max-width: 991px)
+        float: left
+        margin: 0
+        .indicar-amigo
+        .avaliar-produto
+            margin: 60px 0 !important
+
     .indicar-amigo
     .avaliar-produto
         flex: 0 1 48%
         padding 15px
         border: 1px solid #ccc
         position relative
+        margin-top: 200px
         @media(max-width: 991px)
             flex 1 1 100%
             @media(max-width: 991px)
