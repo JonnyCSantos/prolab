@@ -1,5 +1,5 @@
 #bodyProduto , #bodyListaCompra
-
+    padding-top: 0 !important
     .interna.cf
         max-width: 1300px
         margin 0 auto
@@ -2010,3 +2010,34 @@ li.atributos-container.atributos-cor
 .botoesSpot
     .wishLink    
         display none!important
+
+div#fbits-frete-diponibilidade 
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100%
+    &:before
+        content: '';
+        display: inline-block;
+        width: 0.13rem;
+        height: 0.13rem;
+        background-color: #696969;
+        margin-right: 0.31rem;
+    span.texto-titulo 
+        font-size: 0.75rem;
+        color: #696969;
+        font-weight: 400;
+    .prazo,
+    .texto-prazo    
+        margin-left: 0.31rem;
+        font-size: 0.75rem;
+        color: #4eb26c;
+        font-weight: 700;
+
+div#fbits-div-preco-off {
+    display: block;
+    position: absolute;
+    left: -100px;
+    top: 10px;
+}

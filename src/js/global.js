@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  // compre junto
+  if(!$('div#divCompreJunto *').length){    
+    $('.compre-junto').hide()
+  }
+
+
   //Menu mobile
   $(document).on("click", ".ico-menu-fecha", function() {
     $(this)
@@ -363,3 +369,4 @@ $(document).ready(function() {
 
 	$('div#view-item-quantidade-0-normal').css('opacity', '1');
 });
+
